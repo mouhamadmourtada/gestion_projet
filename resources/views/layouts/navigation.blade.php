@@ -31,7 +31,7 @@
             </a>
 
             {{-- Gestion des catégories --}}
-            <a class="element_sidebar {{ request()->is('categories*') ? 'element_sidebar_acitf' : '' }}" href="/categories">
+            {{-- <a class="element_sidebar {{ request()->is('categories*') ? 'element_sidebar_acitf' : '' }}" href="/categories">
                 <span class="text-left">
                     <svg width="20" height="20" fill="inherit" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
@@ -41,11 +41,11 @@
                 <span class="mx-4 text-sm font-bold">
                     Gestion des catégories
                 </span>
-            </a>
+            </a> --}}
 
 
             {{-- Gestion des produits --}}
-            <a class="element_sidebar {{ request()->is('produits*') ? 'element_sidebar_acitf' : '' }}" href="/produits">
+            {{-- <a class="element_sidebar {{ request()->is('produits*') ? 'element_sidebar_acitf' : '' }}" href="/produits">
                 <span class="text-left">
                     <svg width="20" height="20" fill="inherit" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
@@ -55,7 +55,7 @@
                 <span class="mx-4 text-sm font-bold">
                     Gestion des produits
                 </span>
-            </a>
+            </a> --}}
 
             {{-- Gestion des utilisateurs --}}
             <a class="element_sidebar {{ request()->is('admin/users*') ? 'element_sidebar_acitf' : '' }}" href="/admin/users">
@@ -70,7 +70,7 @@
             </a>
 
             {{-- Gestion des recettes --}}
-            <a class="element_sidebar {{ request()->is('admin/users*') ? 'element_sidebar_acitf' : '' }}" href="#">
+            {{-- <a class="element_sidebar {{ request()->is('admin/users*') ? 'element_sidebar_acitf' : '' }}" href="#">
                 <span class="text-left">
                     <svg width="20" height="20" fill="inherit" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
@@ -80,7 +80,7 @@
                 <span class="mx-4 text-sm font-bold">
                     Gestion des recettes
                 </span>
-            </a>
+            </a> --}}
 
         </div>
     </nav>

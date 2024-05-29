@@ -31,25 +31,25 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::prefix('categories')->group(function () {
-    Route::get('/', [CategorieController::class, 'index'])->name('categories.index');
-    Route::get('/create', [CategorieController::class, 'create'])->name('categories.create');
-    Route::post('/', [CategorieController::class, 'store'])->name('categories.store');
-    Route::get('/{categorie}', [CategorieController::class, 'show'])->name('categories.show');
-    Route::get('/{categorie}/edit', [CategorieController::class, 'edit'])->name('categories.edit');
-    Route::put('/{categorie}', [CategorieController::class, 'update'])->name('categories.update');
-    Route::delete('/{categorie}', [CategorieController::class, 'destroy'])->name('categories.destroy');
-});
+// Route::prefix('categories')->group(function () {
+//     Route::get('/', [CategorieController::class, 'index'])->name('categories.index');
+//     Route::get('/create', [CategorieController::class, 'create'])->name('categories.create');
+//     Route::post('/', [CategorieController::class, 'store'])->name('categories.store');
+//     Route::get('/{categorie}', [CategorieController::class, 'show'])->name('categories.show');
+//     Route::get('/{categorie}/edit', [CategorieController::class, 'edit'])->name('categories.edit');
+//     Route::put('/{categorie}', [CategorieController::class, 'update'])->name('categories.update');
+//     Route::delete('/{categorie}', [CategorieController::class, 'destroy'])->name('categories.destroy');
+// });
 
-Route::prefix('produits')->group(function () {
-    Route::get('/', [ProduitController::class, 'index'])->name('produits.index');
-    Route::get('/create', [ProduitController::class, 'create'])->name('produits.create');
-    Route::post('/', [ProduitController::class, 'store'])->name('produits.store');
-    Route::get('/{produit}', [ProduitController::class, 'show'])->name('produits.show');
-    Route::get('/{produit}/edit', [ProduitController::class, 'edit'])->name('produits.edit');
-    Route::put('/{produit}', [ProduitController::class, 'update'])->name('produits.update');
-    Route::delete('/{produit}', [ProduitController::class, 'destroy'])->name('produits.destroy');
-});
+// Route::prefix('produits')->group(function () {
+//     Route::get('/', [ProduitController::class, 'index'])->name('produits.index');
+//     Route::get('/create', [ProduitController::class, 'create'])->name('produits.create');
+//     Route::post('/', [ProduitController::class, 'store'])->name('produits.store');
+//     Route::get('/{produit}', [ProduitController::class, 'show'])->name('produits.show');
+//     Route::get('/{produit}/edit', [ProduitController::class, 'edit'])->name('produits.edit');
+//     Route::put('/{produit}', [ProduitController::class, 'update'])->name('produits.update');
+//     Route::delete('/{produit}', [ProduitController::class, 'destroy'])->name('produits.destroy');
+// });
 
 Route::prefix('admin')->group(function () {
 
